@@ -44,11 +44,6 @@ class MainActivity : AppCompatActivity() {
         toggleMenu.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-//        navView.setNavigationItemSelectedListener {
-//            when(it.itemId){
-//                R.id.
-//            }
-//        }
 
     }
 
