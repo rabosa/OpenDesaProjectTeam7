@@ -1,4 +1,4 @@
-package com.example.opendesa.Data
+package com.example.opendesa.ui.potensi.data
 
 data class PotensiModelData(
     val `data`: List<Data>,

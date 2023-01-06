@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment.PotensiDetailFragment"
+    tools:context=".ui.potensi.fragment.PotensiDetailFragment"
     android:background="#ECF0F5"
     >
 

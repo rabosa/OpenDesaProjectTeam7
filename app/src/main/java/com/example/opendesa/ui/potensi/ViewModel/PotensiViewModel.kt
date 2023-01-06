@@ -1,4 +1,4 @@
-package com.example.opendesa.ViewModel
+package com.example.opendesa.ui.potensi.ViewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

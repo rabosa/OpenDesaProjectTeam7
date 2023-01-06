@@ -1,4 +1,4 @@
-package com.example.opendesa.Fragment
+package com.example.opendesa.ui.potensi.fragment
 
 import android.os.Bundle
 import android.util.Log
@@ -9,20 +9,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.opendesa.Api.PotensiApi
-import com.example.opendesa.Api.PotensiApiEndPoint
-import com.example.opendesa.Data.Data
-
-
+import com.example.opendesa.ui.potensi.api.PotensiApi
+import com.example.opendesa.ui.potensi.api.PotensiApiEndPoint
 import com.example.opendesa.R
 import com.example.opendesa.databinding.FragmentPotensiBinding
-import com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import okhttp3.internal.notify
 
 
 class PotensiFragment : Fragment(R.layout.fragment_potensi) {

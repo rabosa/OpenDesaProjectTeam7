@@ -1,8 +1,7 @@
-package com.example.opendesa.Api
-import com.example.opendesa.Data.Data
-import com.example.opendesa.Data.PotensiModelData
+package com.example.opendesa.ui.potensi.api
+
+import com.example.opendesa.ui.potensi.data.PotensiModelData
 import retrofit2.http.GET
-import retrofit2.Call
 import retrofit2.Response
 
 interface PotensiApiEndPoint {

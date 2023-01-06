@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment.PotensiFragment"
+    tools:context=".ui.potensi.fragment.PotensiFragment"
     android:background="#ECF0F5"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 

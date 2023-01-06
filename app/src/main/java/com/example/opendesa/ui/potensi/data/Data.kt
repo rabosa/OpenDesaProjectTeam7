@@ -1,4 +1,4 @@
-package com.example.opendesa.Data
+package com.example.opendesa.ui.potensi.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

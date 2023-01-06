@@ -1,19 +1,15 @@
-package com.example.opendesa.Fragment
+package com.example.opendesa.ui.potensi.fragment
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.opendesa.Data.Data
-import com.example.opendesa.Data.PotensiModelData
+import com.example.opendesa.ui.potensi.data.Data
 import com.example.opendesa.R
-import com.example.opendesa.databinding.FragmentPotensiBinding
 import com.example.opendesa.databinding.ListPotensiBinding
-import com.google.android.material.imageview.ShapeableImageView
 
 class PotensiAdapter(var context: Context, var potensiList: List<Data>) :
     RecyclerView.Adapter<PotensiAdapter.PotensiViewHolder>() {
@@ -47,7 +43,8 @@ class PotensiAdapter(var context: Context, var potensiList: List<Data>) :
 
 
         holder.itemView.setOnClickListener { view ->
-            val action = PotensiFragmentDirections.actionPotensiFragmentToPotensiDetailFragment(currentItem)
+            val action =
+                PotensiFragmentDirections.actionNavPotensiFragmentToPotensiDetailFragment(currentItem)
             view.findNavController().navigate(action)
         }
     }

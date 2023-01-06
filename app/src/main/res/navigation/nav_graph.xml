@@ -3,38 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-
-    app:startDestination="@+id/potensiFragment">
+    app:startDestination="@id/nav_beranda">
 
     <fragment
-        android:id="@+id/potensiFragment"
-        android:name="com.example.opendesa.Fragment.PotensiFragment"
-        android:label="fragment_potensi"
-        tools:layout="@layout/fragment_potensi" >
+        android:id="@+id/nav_beranda"
+        android:name="com.example.opendesa.ui.home.HomeFragment"
+        android:label="Open Desa"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_berita_desa"
+        android:name="com.example.opendesa.ui.test.TestFragment"
+        android:label="Berita Desa"
+        tools:layout="@layout/fragment_test" />
+
+    <fragment
+        android:id="@+id/nav_potensiFragment"
+        android:name="com.example.opendesa.ui.potensi.fragment.PotensiFragment"
+        android:label="Potensi"
+        tools:layout="@layout/fragment_potensi">
         <action
-            android:id="@+id/action_potensiFragment_to_potensiDetailFragment"
-            app:destination="@id/potensiDetailFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popUpToInclusive="false" />
+            android:id="@+id/action_nav_potensiFragment_to_potensiDetailFragment"
+            app:destination="@id/potensiDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/potensiDetailFragment"
-        android:name="com.example.opendesa.Fragment.PotensiDetailFragment"
+        android:name="com.example.opendesa.ui.potensi.fragment.PotensiDetailFragment"
         android:label="fragment_potensi_detail"
         tools:layout="@layout/fragment_potensi_detail">
         <action
-            android:id="@+id/action_navigation_detail_pop"
-            app:enterAnim="@anim/nav_default_pop_enter_anim"
-            app:exitAnim="@anim/nav_default_pop_exit_anim"
-            app:popUpTo="@id/potensiDetailFragment"
-            app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_potensiDetailFragment_to_potensiFragment"
-            app:destination="@id/potensiFragment" />
+            android:id="@+id/action_potensiDetailFragment_to_nav_potensiFragment"
+            app:destination="@id/nav_potensiFragment" />
         <argument
             android:name="currentPotensi"
-            app:argType="com.example.opendesa.Data.Data" />
+            app:argType="com.example.opendesa.ui.potensi.data.Data" />
     </fragment>
 
 </navigation>
