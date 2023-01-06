@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var toggleMenu : ActionBarDrawerToggle
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -34,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_beranda,
-                R.id.nav_berita_desa
+                R.id.nav_berita_desa,
+                R.id.nav_potensi
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

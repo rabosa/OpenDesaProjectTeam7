@@ -34,19 +34,9 @@
         android:id="@+id/nav_desa"
         android:title="Desa"/>
 
-    <item android:title="Potensi">
-        <menu>
-            <item
-                android:id="@+id/nav_pariwisata"
-                android:title="Pariwisata"/>
-            <item
-                android:id="@+id/nav_perdagangan"
-                android:title="Perdagangan"/>
-            <item
-                android:id="@+id/nav_wisata"
-                android:title="Wisata"/>
-        </menu>
-    </item>
+    <item
+        android:id="@+id/nav_potensi"
+        android:title="Potensi Desa"/>
 
     <item android:title="Unduhan">
         <menu>
