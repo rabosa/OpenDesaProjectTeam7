@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@+id/potensiFragment">
+
+    <fragment
+        android:id="@+id/potensiFragment"
+        android:name="com.example.opendesa.PotensiFragment"
+        android:label="fragment_potensi"
+        tools:layout="@layout/fragment_potensi" >
+        <action
+            android:id="@+id/action_potensiFragment_to_potensiDetailFragment"
+            app:destination="@id/potensiDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/potensiDetailFragment"
+        android:name="com.example.opendesa.PotensiDetailFragment"
+        android:label="fragment_potensi_detail"
+        tools:layout="@layout/fragment_potensi_detail">
+        <action
+            android:id="@+id/action_navigation_detail_pop"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/potensiDetailFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_potensiDetailFragment_to_potensiFragment"
+            app:destination="@id/potensiFragment" />
+        <argument
+            android:name="currentPotensi"
+            app:argType="com.example.opendesa.Potensi" />
+    </fragment>
+
+</navigation>
