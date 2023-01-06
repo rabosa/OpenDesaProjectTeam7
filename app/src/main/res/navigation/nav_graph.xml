@@ -34,7 +34,7 @@
             app:destination="@id/potensiFragment" />
         <argument
             android:name="currentPotensi"
-            app:argType="com.example.opendesa.Potensi" />
+            app:argType="com.example.opendesa.Data.Data" />
     </fragment>
 
 </navigation>
