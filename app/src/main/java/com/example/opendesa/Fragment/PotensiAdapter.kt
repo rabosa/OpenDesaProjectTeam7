@@ -1,16 +1,15 @@
-package com.example.opendesa
+package com.example.opendesa.Fragment
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
-import androidx.navigation.ui.navigateUp
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.opendesa.Potensi
+import com.example.opendesa.R
 import com.google.android.material.imageview.ShapeableImageView
 
 class PotensiAdapter(private val context: Context, private val potensiList: List<Potensi>) :

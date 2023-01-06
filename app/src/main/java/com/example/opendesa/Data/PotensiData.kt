@@ -16,30 +16,35 @@ class PotensiData {
                 R.drawable.duriankumpeh,
                 "Kampang",
                 "Kuda Cuki",
+                "cat1"
 
                 ),
             Potensi(
                 R.drawable.dukukumpeh,
                 "YYYYY",
                 "OIIIII",
+                "cat1"
 
                 ),
             Potensi(
                 R.drawable.kelapasawit,
                 "MANG EYAKK",
                 "IYOOOO",
+                "cat1"
 
                 ),
             Potensi(
                 R.drawable.loji_belanda_muara_kumpeh_2,
                 "KAMPANGGG",
                 "YOOOOOO",
+                "cat1"
 
                 ),
             Potensi(
                 R.drawable.candi_sogo,
                 "IAAA",
-                "AKKAKAKKA"
+                "AKKAKAKKA",
+                "cat1"
             ),
 
             )

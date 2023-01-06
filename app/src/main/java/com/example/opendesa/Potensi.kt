@@ -8,7 +8,8 @@ import kotlinx.parcelize.Parcelize
 data class Potensi(
     var potensiImage: Int,
     var potensiTitle: String,
-    var potensiDesc: String
+    var potensiDesc: String,
+    var potensiCat: String
 )  :Parcelable
 
 

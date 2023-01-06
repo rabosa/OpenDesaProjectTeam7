@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/potensiFragment"
-        android:name="com.example.opendesa.PotensiFragment"
+        android:name="com.example.opendesa.Fragment.PotensiFragment"
         android:label="fragment_potensi"
         tools:layout="@layout/fragment_potensi" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/potensiDetailFragment"
-        android:name="com.example.opendesa.PotensiDetailFragment"
+        android:name="com.example.opendesa.Fragment.PotensiDetailFragment"
         android:label="fragment_potensi_detail"
         tools:layout="@layout/fragment_potensi_detail">
         <action
