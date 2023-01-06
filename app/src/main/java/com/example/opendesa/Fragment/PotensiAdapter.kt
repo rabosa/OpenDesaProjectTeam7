@@ -15,9 +15,13 @@ import com.example.opendesa.databinding.FragmentPotensiBinding
 import com.example.opendesa.databinding.ListPotensiBinding
 import com.google.android.material.imageview.ShapeableImageView
 
-class PotensiAdapter(var context: Context, val potensiList: List<Data>) :
+class PotensiAdapter(var context: Context, var potensiList: List<Data>) :
     RecyclerView.Adapter<PotensiAdapter.PotensiViewHolder>() {
 
+    fun initItems(items : List<Data> = listOf()){
+        potensiList = items
+        notifyDataSetChanged()
+    }
     inner class PotensiViewHolder(private val view: View): RecyclerView.ViewHolder(view){
         var binding = ListPotensiBinding.bind(view)
 
@@ -35,7 +39,7 @@ class PotensiAdapter(var context: Context, val potensiList: List<Data>) :
         val currentItem = potensiList[position]
 
         Glide.with(context).load(
-            "file"
+            "http://192.168.212.138:8000/storage/file/potensi/" + currentItem.file
         ).thumbnail(Glide.with(context).load(R.drawable.candi_sogo)).into(holder.binding.potensiImage)
         //holder.binding.potensiImage.setImageResource(currentItem.file)
         holder.binding.potensiTitle.text = currentItem.nama

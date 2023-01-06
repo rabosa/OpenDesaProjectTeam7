@@ -2,6 +2,7 @@ package com.example.opendesa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -21,12 +22,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val navController = findNavController(R.id.fragmentContainerView)
-
         setupActionBarWithNavController(navController)
         ///setContentView(R.layout.activity_main)
         ///replaceFragment(PotensiFragment())
 
     }
+
+
 
 
     /*private fun replaceFragment(potensiFragment: Fragment) {

@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object PotensiApi {
     fun getInstance() : Retrofit{
-        return Retrofit.Builder().baseUrl("http://192.168.1.11:8000/api/")
+        return Retrofit.Builder().baseUrl("http://192.168.1.4:8000/api/")
             .addConverterFactory(GsonConverterFactory.create()).build()
     }
 

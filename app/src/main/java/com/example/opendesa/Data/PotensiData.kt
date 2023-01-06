@@ -1,5 +1,5 @@
 package com.example.opendesa.Data
-
+/*
 import com.example.opendesa.Potensi
 import com.example.opendesa.R
 import java.util.*
@@ -50,4 +50,4 @@ class PotensiData {
             )
     }
 
-}
+}*/
